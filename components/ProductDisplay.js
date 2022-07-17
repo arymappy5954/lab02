@@ -24,6 +24,7 @@ app.component('product-display',{
         </div>
     </div>   
 </div>
+<review-list :reviews="reviews"></review-list>
 <review-form @review-submited="addReview"></review-form>
 </div>`,
 data(){
