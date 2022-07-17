@@ -12,14 +12,14 @@ const app = Vue.createApp({
             //     { id: 2235, color: 'blue', image: './assets/images/socks_blue.jpg' ,quantity: 0 , onSale: false}
             // ],
             // selectedVariant:0,
-            cart: 0,
+            cart: [],
             premium: true
 
         }
     },
     methods: {
-        updateCart() {
-            this.cart += 1
+        updateCart(id) {
+            this.cart.push(id)
         // },
         // updateImage(variantImage) {
         //     this.image = variantImage
