@@ -14,6 +14,7 @@ app.component('product-display',{
             <p v-else-if="inventory <= 10 && inventory > 0">In Stock</p>
             <p v-else>Out of Stock</p>
             <p>Shipping: {{Shipping}}</p>
+            <product-details :details="details"></product-details>
             <ul>
                 <li v-for="detail in details">{{ detail }}</li>
             </ul>
