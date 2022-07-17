@@ -36,7 +36,8 @@
             </div>
         </div>
     </div> -->
-    <product-display :premium="premium"></product-display>
+    <product-display :premium="premium"
+        @add-to-cart="updateCart"></product-display>
 
     <!-- Import Js -->
     <script src="./main.js "></script>

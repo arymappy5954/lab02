@@ -43,7 +43,7 @@ data(){
 },
 methods: {
     addToCart() {
-        this.cart += 1
+        this.$emit ('add-to-cart')
     },
     updateImage(variantImage) {
         this.image = variantImage
