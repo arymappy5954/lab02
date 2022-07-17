@@ -1,18 +1,19 @@
 const app = Vue.createApp({
     data() {
         return {
-            product: 'Shoes',
-            brand: 'SE 331',
+            // product: 'Shoes',
+            // brand: 'SE 331',
             // image: './assets/images/socks_green.jpg',
             // inStock: false,
-            inventory: 100,
-            details: ['50% cotton', '30% wool', '20% polyester'],
-            variants: [
-                { id: 2234, color: 'green', image: './assets/images/socks_green.jpg' ,quantity: 50 , onSale: true},
-                { id: 2235, color: 'blue', image: './assets/images/socks_blue.jpg' ,quantity: 0 , onSale: false}
-            ],
-            selectedVariant:0,
-            cart: 0
+            // inventory: 100,
+            // details: ['50% cotton', '30% wool', '20% polyester'],
+            // variants: [
+            //     { id: 2234, color: 'green', image: './assets/images/socks_green.jpg' ,quantity: 50 , onSale: true},
+            //     { id: 2235, color: 'blue', image: './assets/images/socks_blue.jpg' ,quantity: 0 , onSale: false}
+            // ],
+            // selectedVariant:0,
+            cart: 0,
+            premium: true
 
         }
     },
