@@ -24,7 +24,7 @@ app.component('product-display',{
         </div>
     </div>   
 </div>
-<review-form></review-form>
+<review-form @review-submited="addReview"></review-form>
 </div>`,
 data(){
     return {
@@ -45,6 +45,7 @@ data(){
                 quantity: 50 }
         ],
         selectedVariant:0,
+        review:[],
         cart: 0
 
     }
