@@ -23,6 +23,10 @@ const app = Vue.createApp({
                 this.cart[0] += 1;
             } else 
                 this.cart[1] += 1;
+            },
+            removeFromCart() {
+                this.cart.splice(0,1,0)
+                this.cart.splice(1,1,0)
         // },
         // updateImage(variantImage) {
         //     this.image = variantImage

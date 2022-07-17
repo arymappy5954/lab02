@@ -20,6 +20,7 @@ app.component('product-display',{
             </ul>
             <div v-for="variant,index in variants" :key="variant.id" @mouseover="updateVariant(index)" class="color-circle":style="{backgroundColor: variant.color }"></div>
             <button class=" button " :class="{disabledButton: !inStock}"@click="addToCart ">Add to Cart</button>
+            <button class="button" v-on:click="removeFromCart">Remove</button>
         </div>
     </div>   
 </div>
@@ -56,6 +57,9 @@ methods: {
     },
     updateVariant(index){
         this.selectedVariant = index;
+    },
+    removeFromCart() {
+        this.$emit('remove-from-cart')
     }
 },
 computed: {
